@@ -1,0 +1,577 @@
+html,
+body{
+    color: #000;
+    background-color: transparent;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*** Spinner Start ***/
+#spinner {
+    opacity: 1;
+    visibility: hidden;
+    transition: opacity .8s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+ }
+
+ #spinner.show {
+     transition: opacity .8s ease-out, visibility 0s linear .0s;
+     visibility: visible;
+     opacity: 1;
+ }
+/*** Spinner End ***/
+
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+}
+
+h1, h2, h3, .h1, .h2, .h3 {
+    font-weight: 400 !important;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h4, h5, h6, .h4, .h5, .h6 {
+    font-weight: 600 !important;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.my-6 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.wow,
+.animated {
+    animation-duration: 2s !important;
+}
+
+/* hero section */
+
+.container-fluid .container .hero h1 span{
+    color: #176B91;
+}
+/*** Button Start ***/
+.btn.btn-primary {
+    border: 0;
+    color: white;
+    background-color: #176B91;
+}
+
+.btn.btn-primary:hover {
+    background: #176B91 !important;
+    color: var(--bs-primary) !important;
+}
+
+.btn {
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-sm-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-md-square {
+    width: 44px;
+    height: 44px;
+}
+
+.btn-lg-square {
+    width: 56px;
+    height: 56px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+/*** Button End ***/
+
+
+/*** Navbar Start ***/
+.nav-bar {
+    background: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 10px 12px;
+    font-weight: 600;
+    font-size: 17px;
+    transition: .5s;
+    color: #176B91;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #176B91;
+}
+.navbar .navbar-nav .nav-link.active {
+    color: black;
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (min-width: 1200px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        top: 100%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        transition: .5s;
+        opacity: 0;
+    }
+    
+    .navbar .nav-item:hover .dropdown-menu {
+        transform: rotateX(0deg);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.dropdown .dropdown-menu a {
+    background-color: white;
+
+}
+.dropdown .dropdown-menu a:hover {
+    background: white;
+    color: #176B91;
+}
+
+#searchModal .modal-content {
+    background-color: rgba(255, 255, 255, .95);
+}
+/*** Navbar End ***/
+
+
+/*                          */
+
+.container-fluid .h1 .textprimary {
+    color: black;
+
+}
+
+/*** service start ***/
+.service .service-item {
+    position: relative;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
+
+.service-content::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    background: #176B91;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+.service-item:hover .service-content::after {
+    height: 100%;
+    opacity: 1;
+}
+
+.service-item .service-content-icon {
+    position: relative;
+    z-index: 2;
+}
+
+.service-item .service-content-icon i{
+    color:#176B91;
+}
+.service-item .service-content-icon p {
+    transition: 1s;
+}
+
+.service-item:hover .service-content-icon h4 {
+    color: snow;
+}
+
+
+.service-item:hover .service-content-icon i {
+    color: white !important;
+}
+
+.service-item:hover .service-content-icon p {
+    color: white;
+}
+
+.service-item:hover .service-content-icon a.btn-primary {
+    background: white;
+    color: #176B91;
+}
+
+.service-item .service-content-icon a.btn-primary {
+    transition: 1s !important;
+    color: #ffffff;
+    background-color: #176B91;
+}
+
+/*** Services End ***/
+
+/* about us*/
+
+.container1 ul {
+    width: fit-content;
+    height: 50%;
+    position: relative;
+}
+
+.container1 .tab-content {
+    max-width: 90%;
+    max-height: 100%;
+    margin-left: 20%;
+}
+
+.container1 img {
+    margin-left: 15%;
+}
+
+.container1 h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #176B91;
+    margin-left: 20%;
+}
+.container1 .tabulation-2 ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+    margin-left: 23.5%;
+}
+
+.container1 .tabulation-2 li {
+    float: left;
+}
+
+.container1 .tabulation-2 li a {
+    display: block;
+    width: 150px;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.container1 .tab-content p {
+    font-size: 18px;
+    line-height: 28px;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    margin-left: 0%;
+}
+
+.tabulation-2 .nav-pills .nav-item .nav-link {
+    background: #fff;
+    border-radius: 4px;
+    color: #000000;
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 0, 0.1); }
+.tabulation-2 .nav-pills .nav-item .nav-link span {
+      color: #176B91; }
+.tabulation-2 .nav-pills .nav-item .nav-link.active {
+      color: #fff;
+      background: #176B91;
+      border: 1px solid #070707; }
+.tabulation-2 .nav-pills .nav-item .nav-link.active span {
+        color: #fff; }
+  
+  .tabulation-2 .tab-content {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+ }
+
+.tab-content > .tab-pane {
+        display: none; }
+      
+.tab-content > .active {
+        display: block; }
+      
+
+
+/*** Why Legal Service? ***/
+
+.container-legal-faqt .container {
+    position: relative;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
+
+
+.container-legal-faqt .container {
+    width: 100%;
+    height: 30%;
+    position: relative;
+    
+}
+
+.container-legal-faqt .container i {
+    color:#176B91;
+}
+.container-legal-faqt .container h1{
+    text-align: center;
+}
+
+.container-legal-faqt .container .table {
+    width: 25%;
+    height: 100%;
+    color:black;
+}
+
+.container-legal-faqt .container .table p{
+    margin: auto;
+    line-height: 1.5em;
+    justify-content: baseline;
+}
+/*** Why Legal Service? ends ***/
+
+/*** Team Start ***/
+.team-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.team-item .team-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.team-item .team-icon .share-link {
+    opacity: 0;
+    transition: 0.9s;
+}
+
+.team-item:hover .share-link {
+    opacity: 1;
+}
+
+.team-item .team-content {
+    transition: 0.9s;
+}
+
+.team-item:hover .team-content {
+    background: #176B91 !important;
+    color: var(--bs-dark) !important;
+}
+
+.team-item .team-content h4 {
+    color: #176B91;
+}
+.team-item .team-content p {
+    transition: 0.5s;
+}
+
+.team-item:hover .team-content h4 {
+    color: var(--bs-dark) !important;
+}
+
+.team-item:hover .team-content p {
+    color: white;
+}
+
+.team-item .team-icon:hover a {
+    color: aqua;
+    background-color: #000;
+}
+
+.team-item .team-icon a {
+    color: AQUA;
+    background-color: #176B91;
+}
+/*** Team End ***/
+
+
+/*** Contact start ***/
+.contact-form {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
+
+/*** Contact End ***/
+
+
+/*** Footer Start ***/
+
+.footer .footer-item a.text-body:hover {
+    color: var(--bs-primary) !important;
+}
+/*** Footer End ***/
+
+
+/****                 Subpage           ****/
+
+/* About us*/
+.container-fluidabout img {
+    width: 100%;
+    height: 100%;
+}
+.containeraboutus {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.section {
+    margin: 20px 0;
+    overflow: hidden;
+  }
+
+.textmission {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .containeraboutus .textmission h3{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #176B91;
+  }
+
+  .containeraboutus .textmission p {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    justify-content: center;
+  }
+  .imagemission {
+    float: right;
+    width: 30%;
+   box-sizing: border-box;
+  }
+
+  .containeraboutus .textvission h3 {
+    display: inline-block;
+    font-size: 50px;
+    color: #176B91;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .containeraboutus .textvission p {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    justify-content: center;
+  }
+
+  .textvission {
+    float: right;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+
+  }
+
+
+  .imagevision {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+
+  }
+
+  .containeraboutus .textstory h3{
+    display: inline-block;
+    font-size: 50px;
+    color: #176B91;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .containeraboutus .textstory p{
+        font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    justify-content: center;
+  }
+
+  .containeraboutus img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .sectionstory {
+    text-align: center;
+  }
+
+  /*about us ends */
+
+  /* our team*/
+
+.container-team .container a {
+    float: right;
+  }
+
+  /*** team Start ***/
+.team-item {
+    position: relative;
+}
+
+.team-item img {
+    transition: 0.5s;
+}
+
+.team-item:hover img {
+    transform: scale(1.3)
+}
+
+.team-item .blog-content {
+    position: relative;
+    transform: translateY(-50%);
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
+
+.team-item .blog-content a.btn h5 {
+    transition: 0.5s;
+}
+
+.team-item:hover .blog-content a.btn h5 {
+    color: var(--bs-primary) !important;
+}
+
+.team-item .text-dark  {
+    background-color: #176B91;
+}
+
+.container-team .container img{
+    background-size: cover;
+}
+
+/*** Blog End ***/
